@@ -1,45 +1,54 @@
+* {
+    font-family: sans-serif;
+}
+
 /* Estilos para el contenedor de formulario */
-.formulario-de-registro {
+.contenedor {
     max-width: 400px;
     text-align: center;
     margin: auto;
-    font-family: sans-serif;
     border: 1px solid #ccc;
     padding: 30px;
     background-color: #f8f8f8;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  }
+    box-shadow: 0 2px 4px #00000033;
+}
   
-  /* Estilos para el texto de encabezado */
-  .formulario-de-registro h1 {
+/* Estilos para el texto de encabezado */
+.contenedor form h1 {
     text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+    font-size: 120px;
+    margin-bottom: 30px;
     color: #666;
-  }
+}
   
-  /* Estilos para los campos de entrada */
-  .formulario-de-registro input[type="text"] {
-
+/* Estilos para los campos de entrada */
+.input-usuario {
+    display: block;
     padding: 10px;
-    margin-bottom: 10px;
+    margin: auto;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 3px;
-  }
+    /*outline: 3px solid #0000;
+    transition: outline-color .12s;*/
+}
   
-  .formulario-de-registro input[type="text"]:focus {
-    border: 3px solid #4CAF50;
-  }
+.input-usuario:focus {
+    outline: 3px solid #4CAF50;
+}
   
-  /* Estilos para el botón de enviar */
-  .formulario-de-registro input[type="submit"] {
+/* Estilos para el botón de enviar */
+.boton-enviar {
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    text-align: center;
     margin: auto;
-    font-family: sans-serif;
-  }
+    /*transition: background-color .12s;*/
+}
+
+.boton-enviar:hover {
+    background-color: #7CCF80;
+}
