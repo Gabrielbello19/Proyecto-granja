@@ -21,6 +21,7 @@
   
   /* Estilos para los campos de entrada */
   .formulario-de-registro input[type="text"] {
+
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -28,7 +29,7 @@
   }
   
   .formulario-de-registro input[type="text"]:focus {
-    border: 6px solid #4CAF50;
+    border: 3px solid #4CAF50;
   }
   
   /* Estilos para el botón de enviar */
