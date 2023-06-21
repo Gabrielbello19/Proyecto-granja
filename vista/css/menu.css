@@ -1,6 +1,6 @@
 .formulario-de-registro {
     background-color: rgb(211, 204, 204);
-    border: 4px dashed rgb(94, 94, 102);
+    border: 4px double rgb(94, 94, 102);
     border-radius: 3px; padding: 20px;
     width: 400px; text-align: center;
     margin: auto;
