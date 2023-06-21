@@ -1,4 +1,8 @@
 .formulario-de-registro {
-    background-color: blue;
-    color: #777777;
+    background-color: rgb(211, 204, 204);
+    border: 4px dashed rgb(94, 94, 102);
+    border-radius: 3px; padding: 20px;
+    width: 400px; text-align: center;
+    margin: auto;
+    font-family: sans-serif;
 }
