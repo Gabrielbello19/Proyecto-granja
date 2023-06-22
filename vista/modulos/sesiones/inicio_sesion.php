@@ -17,21 +17,12 @@
             </form>
             <a class="enlace" href="vista/modulos/sesiones/registrarse.html">>> o regístrate</a>
         </div>
-
         <footer>
-	      <div class="container">
-		        <div class="row">
-		    	    <div class="col-md-6">
-		    		    <h4>Nuestra ubicación</h4>
-		    		    <p>Turmero, Edo. Aragua, Venezuela</p>
-		    	    </div>
-		    	    <div class="col-md-6">
-		    		    <h4>Contacto</h4>
-		    		    <p>Teléfono: 0424-3655004</p>
-		    		    <p>Correo electrónico: gaboxbellox@gmail.com</p>
-		    	    </div>
-	    	    </div>
-	        </div>
+            <h4>Nuestra ubicación</h4>
+            <p>Turmero, Edo. Aragua, Venezuela</p>
+            <h4>Contacto</h4>
+            <p>Teléfono: 0424-3655004</p>
+            <p>Correo electrónico: gaboxbellox@gmail.com</p>
        </footer>
     </body> 
 </html>
