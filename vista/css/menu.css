@@ -13,9 +13,9 @@
     border-radius: 5px;
     box-shadow: 0 2px 4px #00000033;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
 }
   
 /* Estilos para el texto de encabezado */
@@ -25,6 +25,7 @@
     margin-bottom: 30px;
     color: #666;
 }
+
 
 /* Estilos para los campos de entrada */
 .input-usuario {
@@ -53,8 +54,11 @@
     cursor: pointer;
     margin: auto;
     transition: background-color .12s;
+    width: 100px;
+    height: 25px; 
 }
 
+/*transition: background-color .12s;*/
 .boton-enviar:hover {
     background-color: #7CCF80;
 }
