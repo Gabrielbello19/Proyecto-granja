@@ -66,3 +66,42 @@
     text-decoration: none;
     color: #1e87e9;
 }
+
+/*pie de pagina*/
+footer {
+    background-color: #21a52c;
+    padding: 50px 0;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.container h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.container p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container .col-md-6 {
+    width: 50%;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .container .col-md-6 {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
