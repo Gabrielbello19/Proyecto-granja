@@ -34,8 +34,8 @@
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    /*outline: 3px solid #0000;
-    transition: outline-color .12s;*/
+    outline: 3px solid #0000;
+    transition: outline-color .12s;
 }
   
 .input-usuario:focus {
