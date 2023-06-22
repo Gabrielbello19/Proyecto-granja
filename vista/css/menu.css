@@ -61,3 +61,8 @@
 .boton-enviar:hover {
     background-color: #7CCF80;
 }
+
+.enlace {
+    text-decoration: none;
+    color: #1e87e9;
+}

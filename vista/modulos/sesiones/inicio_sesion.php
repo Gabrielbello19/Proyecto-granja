@@ -15,6 +15,7 @@
                 <input class="input-usuario" type="password" name="contraseña" placeholder="Contraseña">
                 <input class="boton-enviar" type="submit" value="Entrar">
             </form>
+            <a class="enlace" href="registrarse.html">>> o regístrate</a>
         </div>
     </body>
 </html>

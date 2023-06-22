@@ -8,7 +8,7 @@
     </head>
     <body>
         <div class="contenedor">
-         <form>
+         <form action="" method="post">
                <h1>Registrate</h1>
                <input class="input-usuario" type="number" name="cedula" placeholder="Cedula">
                <input class="input-usuario" type="text" name="n_usuario" placeholder="Nombre de usuario">
