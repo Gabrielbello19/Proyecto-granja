@@ -11,16 +11,22 @@
     padding: 30px;
     background-color: #f8f8f8;
     border-radius: 5px;
-    box-shadow: 0 2px 4px #00000033;
+    box-shadow: 0 2px 4px #00000033;   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
   
 /* Estilos para el texto de encabezado */
 .contenedor form h1 {
     text-align: center;
-    font-size: 120px;
+    font-size: 40px;
     margin-bottom: 30px;
     color: #666;
+  
 }
+
   
 /* Estilos para los campos de entrada */
 .input-usuario {
