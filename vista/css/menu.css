@@ -17,7 +17,7 @@
     left: 50%;
     transform: translate(-50%, -40%);
 }
-  
+
 /* Estilos para el texto de encabezado */
 .contenedor form h1 {
     text-align: center;
@@ -25,7 +25,6 @@
     margin-bottom: 30px;
     color: #666;
 }
-
 
 /* Estilos para los campos de entrada */
 .input-usuario {
@@ -42,7 +41,7 @@
 .input-usuario:focus {
     outline: 3px solid #4CAF50;
 }
-  
+
 /* Estilos para el botón de enviar */
 .boton-enviar {
     width: 100px;
