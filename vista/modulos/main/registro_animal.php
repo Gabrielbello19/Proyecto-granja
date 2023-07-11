@@ -24,7 +24,7 @@
                     <br>
                     <input  class="input-usuario" type="text" name="grupo" placeholder="Grupo.">
                     <input type="number" name="edad" placeholder="Edad.">
-                    <input type="number" name="peso" placeholder="Peso(kg).">
+                    <input  id="inputPeso" name="peso" type="number" step="0.1" placeholder="0.0" min="0" /> 
                     <input type="text" name="estado" placeholder="Estado.">
                     <input type="date" name="ult_revision" placeholder="Ultima revision.">
                     <input type="date" name="prox_revision" placeholder="Proxima revision.">
