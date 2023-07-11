@@ -13,8 +13,7 @@
             <a href="index.php?pagina=inicio">Home</a>
             <a href="index.php?pagina=reportes">Reporte</a>
             <a href="index.php?pagina=registro-animal" class="active">Registrar Animal</a>
-            <a href="">About</a>
-        </div>
+            <a href="index.php?pagina=vacunacion" class="active">Registro de vacunas</a>
         <div class="container-fluid p-5">
             <h3 class="ps-5">Registrar animal</h3>
             <div class="card p-5 bg-dark text-white">

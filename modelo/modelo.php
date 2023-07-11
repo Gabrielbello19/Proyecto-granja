@@ -8,6 +8,7 @@
                 "inicio"    => "dashboard",
                 "reportes"    => "reporte",
                 "registro-animal"    => "registro_animal",
+                "vacunacion"    => "vacunacion",
             );
 
             require "vista/modulos/main/".$referencia[$peticion].".php";
