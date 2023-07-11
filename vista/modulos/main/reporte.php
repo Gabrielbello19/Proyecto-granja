@@ -19,7 +19,7 @@
             <h3 class="ps-5">Crear Reporte</h3>
             <div class="card p-5 bg-dark text-white">
                 <form action="">
-                    <label>Yo he hecho esta consulta </label>
+                    <label>Yo he creado este reporte.</label>
                     <input type="checkbox" id="alguien-mas" checked>
                     <br>
 
