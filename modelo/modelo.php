@@ -7,6 +7,7 @@
             $referencia = array(
                 "inicio"    => "dashboard",
                 "reportes"    => "reporte",
+                "registro-animal"    => "registro_animal",
             );
 
             require "vista/modulos/main/".$referencia[$peticion].".php";

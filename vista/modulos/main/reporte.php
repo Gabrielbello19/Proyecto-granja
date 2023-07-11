@@ -12,7 +12,7 @@
         <div class="topnav">
             <a href="index.php?pagina=inicio">Home</a>
             <a href="index.php?pagina=reportes" class="active">Reporte</a>
-            <a href="index.php?pagina=Contact">Contact</a>
+            <a href="index.php?pagina=registro-animal" >Registrar Animal</a>
             <a href="">About</a>
         </div>
         <div class="container-fluid p-5">
