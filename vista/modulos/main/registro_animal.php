@@ -22,15 +22,15 @@
                     <label class="text-white">Yo he hecho este registro </label>
                     <input type="checkbox" id="alguien-mas" checked>
                     <br>
-                    <input type="text" placeholder="placeholder" disabled>
-
+                    <input  class="input-usuario" type="text" name="grupo" placeholder="Grupo.">
+                    <input type="number" name="edad" placeholder="Edad.">
+                    <input type="number" name="peso" placeholder="Peso(kg).">
+                    <input type="text" name="estado" placeholder="Estado.">
+                    <input type="date" name="ult_revision" placeholder="Ultima revision.">
+                    <input type="date" name="prox_revision" placeholder="Proxima revision.">
+                    <input class="boton-enviar" type="submit" value="Registrar">
                     <br>
                     <br>
-                    
-                    <label class="text-white">Animal </label>
-                    <select name="animal">
-                        <option value="null"> -- seleccione -- </option>
-                    </select>
                 </form>
             </div>
         </div>
