@@ -7,15 +7,15 @@
 
         // funcion para ir al inicio de sesion
         public function PeticionesGet(){
-            if (isset($_GET["pagina"])){
+            if (isset($_GET['pagina'])){
                 $modelo = new Modelo();
 
-                $modelo->LogicaDeEnlaces($_GET["pagina"]);
+                $modelo->LogicaDeEnlaces($_GET['pagina']);
             }
             else {
                 $modelo = new Modelo();
                 
-                $modelo->LogicaDeEnlaces("inicio");
+                $modelo->LogicaDeEnlaces('inicio');
             }
         }
     }
