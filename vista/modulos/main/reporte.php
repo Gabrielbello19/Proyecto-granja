@@ -24,7 +24,6 @@
                     <br>
 
                     <input type="text" placeholder="placeholder" disabled>
-                    <input type="text" placeholder="placeholder">
 
                     <br>
                     <br>
@@ -33,6 +32,13 @@
                     <select name="animal">
                         <option value="null"> -- seleccione -- </option>
                     </select>
+
+                    <br>
+                    <br>
+
+                    <label></label>
+                    <textarea name="mensaje" rows="10"></textarea>
+
                 </form>
             </div>
         </div>
