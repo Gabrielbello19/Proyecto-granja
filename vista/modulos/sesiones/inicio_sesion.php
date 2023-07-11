@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Granjas melano</title>
+        <title>Granjas BFV</title>
         <link rel="stylesheet" href="vista/css/menu.css">
         <script src="vista/js/login.js"></script>
     </head>
