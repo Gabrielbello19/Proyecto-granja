@@ -1,6 +1,5 @@
 
 <?php
-    require "modelo/conexion.php";
     require "modelo/modelo.php";
     require "controlador/controlador.php";
 
