@@ -21,7 +21,6 @@
                     <label class="text-white">Yo he hecho este registro </label>
                     <input type="checkbox" id="alguien-mas" checked>
                     <br>
-                    <input  class="input-usuario" type="text" name="grupo" placeholder="Grupo.">
                     <input type="text" name="vacuna" placeholder="Vacuna.">
                     <input type="number" name="id_animal" placeholder="Id_animal.">
                     <input type="number" name="nro_dosis" placeholder="Numero de dosis.">
