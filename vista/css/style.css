@@ -1,0 +1,11 @@
+input:disabled {
+    background-color: #444;
+}
+
+p, label {
+    color: #bbb;
+}
+
+select {
+    color: #222;
+}

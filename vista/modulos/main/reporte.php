@@ -19,15 +19,17 @@
             <h3 class="ps-5">Crear Reporte</h3>
             <div class="card p-5 bg-dark text-white">
                 <form action="">
-                    <label class="text-white">Yo he hecho esta consulta </label>
+                    <label>Yo he hecho esta consulta </label>
                     <input type="checkbox" id="alguien-mas" checked>
                     <br>
+
                     <input type="text" placeholder="placeholder" disabled>
+                    <input type="text" placeholder="placeholder">
 
                     <br>
                     <br>
                     
-                    <label class="text-white">Animal </label>
+                    <label>Animal </label>
                     <select name="animal">
                         <option value="null"> -- seleccione -- </option>
                     </select>
