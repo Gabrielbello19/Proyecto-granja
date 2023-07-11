@@ -13,7 +13,8 @@
             <a href="index.php?pagina=inicio">Home</a>
             <a href="index.php?pagina=reportes" class="active">Reporte</a>
             <a href="index.php?pagina=registro-animal" >Registrar Animal</a>
-            <a href="index.php?pagina=vacunacion" class="active">Registro de vacunas</a>      
+            <a href="index.php?pagina=vacunacion">Registro de vacunas</a>   
+        </div>
         <div class="container-fluid p-5">
             <h3 class="ps-5">Crear Reporte</h3>
             <div class="card p-5 bg-dark text-white">
@@ -44,7 +45,7 @@
                         <?php
                             //capturar todos los animales
 
-                            
+
 
                         ?>
                     </select>
