@@ -2,10 +2,19 @@ input:disabled {
     background-color: #444;
 }
 
+input[type="text"], input[type="number"],select {
+    border-radius: 3px;
+}
+
 p, label {
     color: #bbb;
 }
 
 select {
     color: #222;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 4px;
 }

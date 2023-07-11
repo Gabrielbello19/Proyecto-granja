@@ -23,15 +23,39 @@
                     <br>
 
                     <input type="text" placeholder="placeholder" disabled>
-                    <input type="text" placeholder="placeholder">
+
+                    <br>
+                    <br>
+                    
+                    <label>Tipo de revision </label>
+                    <select name="animal" required>
+                        <option> -- seleccione -- </option>
+                        <option value="rutina"> Chequeo de rutina </option>
+                        <option value="emergencia"> Chequeo de emergencia </option>
+                        <option value="nacimiento"> Reporte de nacimiento </option>
+                    </select>
 
                     <br>
                     <br>
                     
                     <label>Animal </label>
-                    <select name="animal">
-                        <option value="null"> -- seleccione -- </option>
+                    <select name="animal" required>
+                        <option> -- seleccione -- </option>
+                        <?php
+                            //capturar todos los animales
+
+                            
+
+                        ?>
                     </select>
+
+                    <br>
+                    <br>
+
+                    <label>Descripcion</label>
+                    <textarea name="mensaje" rows="10"></textarea>
+                    <p>0/500</p>
+
                 </form>
             </div>
         </div>
