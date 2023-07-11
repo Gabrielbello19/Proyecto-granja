@@ -57,6 +57,7 @@
                     <textarea name="mensaje" rows="10"></textarea>
                     <p>0/500</p>
 
+                    <input type="submit" value="Enviar">
                 </form>
             </div>
         </div>

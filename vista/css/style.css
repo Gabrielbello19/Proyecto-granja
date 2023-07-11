@@ -2,8 +2,22 @@ input:disabled {
     background-color: #444;
 }
 
-input[type="text"], input[type="number"],select {
+input[type="text"], input[type="number"], input[type="date"], select {
     border-radius: 3px;
+}
+
+input[type="submit"] {
+    font-weight: bold;
+    color: white;
+    background-color: #04AA6D;
+    border-radius: 5px;
+    padding: 8px 14px;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #04cA3D;
+
 }
 
 p, label {
