@@ -1,12 +1,22 @@
 <?php
     class Controlador {
-        // funcion para ir al inicio de sesion
-        function ir_al_inicio_de_sesion(){
-            require "./vista/modulos/sesiones/inicio_sesion.php";
+
+        public function RenderPlantilla(){
+            include "vista/plantilla.php";
         }
 
-        function dashboard(){
-            require __DIR__.'/../vista/modulos/main/dashboard.php';
+        // funcion para ir al inicio de sesion
+        public function PeticionesGet(){
+            if (isset($_GET["pagina"])){
+                $modelo = new Modelo();
+
+                $modelo->LogicaDeEnlaces($_GET["pagina"]);
+            }
+            else {
+                $modelo = new Modelo();
+                
+                $modelo->LogicaDeEnlaces("inicio");
+            }
         }
     }
 ?>
