@@ -8,7 +8,30 @@
     </head>
     <body>
         <div class="contenedor">
-         <form action="" method="post">
+        <form action="index.php?pagina=registrarse" method='post'>
+                    <?php
+                     require "modelo/conexion.php";
+                        if($_POST){
+                            if (isset($_POST['usuario'])) {
+                                $cedula = $_POST['cedula'];
+                                $n_usuario = $_POST['n_usuario'];
+                                $nombre = $_POST['nombre'];
+                                $correo = $_POST['correo'];
+                                $contraseña = $_POST['contraseña'];
+                                $nacimiento = $_POST['nacimiento'];
+                                
+
+                                    $query = "INSERT INTO usuario(cedula, n_usuario, nombre, correo, contraseña, nacimiento) VALUES ('$cedula', $n_usuario, '$nombre', '$correo', '$contraseña', '$nacimiento')";
+                                    $respuesta = $conexion->query($query);
+                               
+
+
+                                if($respuesta){
+                                    echo "<script>alert('El reporte se ha registrado correctamente')</script>";
+                                }
+                            }
+                        }
+                    ?>
                <h1>Registrate.</h1>
                <input class="input-usuario" type="number" name="cedula" placeholder="Cedula.">
                <input class="input-usuario" type="text" name="n_usuario" placeholder="Nombre de usuario.">
