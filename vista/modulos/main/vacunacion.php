@@ -19,17 +19,22 @@
             <h3 class="ps-5">Registro de vacunas</h3>
             <div class="card p-5 bg-dark text-white">
                 <form action="">
-                    <label class="text-white">Yo he hecho este registro </label>
-                    <input type="checkbox" id="alguien-mas" checked>
+                    <label> Vacuna:  </label><br>
+                    <input type="text" name="vacuna" placeholder="Vacuna."><br>
                     <br>
-                    <input type="text" name="vacuna" placeholder="Vacuna.">
-                    <input type="number" name="id_animal" placeholder="Id_animal.">
-                    <input type="number" name="nro_dosis" placeholder="Numero de dosis.">
-                    <input type="date" name="aplicada" placeholder="Aplicada.">
-                    <input type="date" name="prox_dosis" placeholder="Proxima dosis.">
-                    <input type="submit" value="Registrar">
+                    <label> ID del animal:  </label><br>
+                    <input type="number" name="id_animal" placeholder="Id_animal."><br>
                     <br>
+                    <label> Numero de dosis:  </label><br>
+                    <input type="number" name="nro_dosis" placeholder="Numero de dosis."><br>
                     <br>
+                    <label> Fecha de aplicacion:  </label><br>
+                    <input type="date" name="aplicada" placeholder="Aplicada."><br>
+                    <br>
+                    <label> Proxima aplicacion:  </label><br>
+                    <input type="date" name="prox_dosis" placeholder="Proxima dosis."><br>
+                    <br>
+                    <input class="boton-enviar" type="submit" value="Registrar">
                 </form>
             </div>
         </div>

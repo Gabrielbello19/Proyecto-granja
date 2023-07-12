@@ -22,16 +22,23 @@
             
 
                 <form action="">
-                <label>Yo he creado este reporte.</label>
-                    <input id="yoCreeRep" type="checkbox" id="alguien-mas" checked>
-                    <br>
-
-                    <input id="yoCreeRep_t" type="text" placeholder="nuevo emisor" disabled>
-
-                    <br>
-                    <br>
                     <label> Especie:  </label><br>
-                    <input type="text" name="especie" ><br>
+                    <select name="animal" required>
+                        <option> -- seleccione -- </option>
+                        <?php
+                            //capturar todos los animales
+                            require "modelo/conexion.php";
+
+                            $query = "SELECT a.id, e.animal FROM animal a LEFT JOIN especie e ON a.id_especie = e.id";
+                            $resultado = $conexion->query($query);
+
+                            while ($res = $resultado->fetch_assoc()){
+                                $animal_id = $res['id'];
+                                $animal = $res['animal'];
+                                echo "<option value='$animal_id'>$animal_id - $animal</option>";
+                            }
+                        ?>
+                    </select><br>
                     <br>
                     <label> Edad:  </label><br>
                     <input type="number" name="edad" ><br>
