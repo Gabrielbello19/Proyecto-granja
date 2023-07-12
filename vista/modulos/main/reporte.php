@@ -30,7 +30,7 @@
                     
                     <label>Tipo de revision </label>
                     <select name="animal" required>
-                        <option> -- seleccione -- </option>
+                        <option></option>
                         <option value="rutina"> Chequeo de rutina </option>
                         <option value="emergencia"> Chequeo de emergencia </option>
                         <option value="nacimiento"> Reporte de nacimiento </option>
@@ -41,7 +41,7 @@
                     
                     <label>Animal </label>
                     <select name="animal" required>
-                        <option> -- seleccione -- </option>
+                        <option></option>
                         <?php
                             //capturar todos los animales
                             require "modelo/conexion.php";
@@ -61,8 +61,8 @@
                     <br>
 
                     <label>Descripcion</label>
-                    <textarea name="mensaje" rows="10"></textarea>
-                    <p>0/500</p>
+                    <textarea id="textoMensaje" name="mensaje" rows="10" maxlength="500" required></textarea>
+                    <p id="textoMensajeCuenta">0/500</p>
 
                     <input type="submit" value="Enviar">
                 </form>
