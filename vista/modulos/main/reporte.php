@@ -45,6 +45,7 @@
                         <option value="rutina"> Chequeo de rutina </option>
                         <option value="emergencia"> Chequeo de emergencia </option>
                         <option value="nacimiento"> Reporte de nacimiento </option>
+                        <option value="mortalidad"> Reporte de mortalidad </option>
                     </select>
 
                     <br>
