@@ -57,4 +57,12 @@ document.addEventListener("DOMContentLoaded", function(e){
         }
     });
 
+    if (document.querySelector('#textoMensaje') != null){
+        let mensaje = document.querySelector('#textoMensaje');
+
+        mensaje.addEventListener('keyup', function(event) {
+            document.querySelector('#textoMensajeCuenta').innerHTML = this.value.length + '/500';
+        });
+    }
+
 });
