@@ -17,20 +17,39 @@
         </div>
         <div class="container-fluid p-5">
             <h3 class="ps-5">Registrar animal</h3>
+            <link rel="stylesheet" href="vista/css/menu.css">
             <div class="card p-5 bg-dark text-white">
+            
+
                 <form action="">
-                    <label class="text-white">Yo he hecho este registro </label>
-                    <input type="checkbox" id="alguien-mas" checked>
+                <label>Yo he creado este reporte.</label>
+                    <input id="yoCreeRep" type="checkbox" id="alguien-mas" checked>
                     <br>
-                    <input  class="input-usuario" type="text" name="grupo" placeholder="Grupo.">
-                    <input type="number" name="edad" placeholder="Edad.">
-                    <input  id="inputPeso" name="peso" type="number" step="0.1" placeholder="0.0" min="0" /> 
-                    <input type="text" name="estado" placeholder="Estado.">
-                    <input type="date" name="ult_revision" placeholder="Ultima revision.">
-                    <input type="date" name="prox_revision" placeholder="Proxima revision.">
+
+                    <input id="yoCreeRep_t" type="text" placeholder="nuevo emisor" disabled>
+
+                    <br>
+                    <br>
+                    <label> Especie:  </label><br>
+                    <input type="text" name="especie" ><br>
+                    <br>
+                    <label> Edad:  </label><br>
+                    <input type="number" name="edad" ><br>
+                    <br>
+                    <label> Peso (kg):  </label><br>
+                    <input  id="inputPeso" name="peso" type="number" step="0.1" placeholder="0.0" min="0" /> <br>
+                    <br>
+                    <label> Estado:  </label><br>
+                    <input type="text" name="estado" ><br>
+                    <br>
+                    <label> Ultima revision:  </label><br>
+                    <input type="date" name="ult_revision" ><br>
+                    <br>
+                    <label> Proxima revision:  </label><br>
+                    <input type="date" name="prox_revision" ><br>
+                    <br>
                     <input class="boton-enviar" type="submit" value="Registrar">
-                    <br>
-                    <br>
+                    
                 </form>
             </div>
         </div>
