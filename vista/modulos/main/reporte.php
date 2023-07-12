@@ -18,14 +18,26 @@
         <div class="container-fluid p-5">
             <h3 class="ps-5">Crear Reporte</h3>
             <div class="card p-5 bg-dark text-white">
-                <form action="index.php?pagina=reportes">
+                <form action="index.php?pagina=reportes" method='post'>
                     <?php
                         require "modelo/conexion.php";
 
                         if($_POST){
                             if (isset($_POST['tipo']) && isset($_POST['animal']) && isset($_POST['mensaje'])){
-                                $emisor = isset($_POST['emisor'])? isset($_POST['emisor']) : 'jaimito';
-                                
+                                $emisor = isset($_POST['emisor'])? $_POST['emisor'] : 'jaimito';
+                                $tipo = $_POST['tipo'];
+                                $animal = $_POST['animal'];
+                                $mensaje = $_POST['mensaje'];
+
+                                $a = [$emisor, $tipo, $animal, $mensaje];
+
+                                $query = "INSERT INTO reporte (usuario, id_animal, mensaje, tipo) VALUES ('$emisor', $animal, '$mensaje', '$tipo')";
+
+                                $respuesta = $conexion->query($query);
+
+                                if($respuesta){
+                                    echo "<script>alert('El reporte se ha registrado correctamente')</script>";
+                                }
                             }
                         }
                     ?>

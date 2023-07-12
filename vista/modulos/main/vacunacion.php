@@ -28,6 +28,7 @@
                         <option></option>
                         <?php
                             //capturar todos los animales
+                            require "modelo/conexion.php";
 
                             $query = "SELECT * FROM especie";
                             $resultado = $conexion->query($query);

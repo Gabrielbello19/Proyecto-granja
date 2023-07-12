@@ -21,7 +21,46 @@
             <div class="card p-5 bg-dark text-white">
             
 
-                <form action="">
+                <form action="index.php?pagina=registro-animal" method='post'>
+                    <?php
+                        require "modelo/conexion.php";
+
+                        if($_POST){
+                            if ((isset($_POST['animal']) || isset($_POST['nuevo_animal'])) && isset($_POST['edad']) && isset($_POST['peso']) && isset($_POST['estado'])){
+                                $animal = $_POST['animal'];
+                                $edad = $_POST['edad'];
+                                $peso = $_POST['peso'];
+                                $estado = $_POST['estado'];
+
+                                if(!isset($_POST['nuevo_animal'])){
+
+                                    $query = "INSERT INTO animal (id_especie, edad, peso, estado) VALUES ('$animal', $edad, '$peso', '$estado')";
+                                    $respuesta = $conexion->query($query);
+
+                                }
+                                else{
+
+                                    $nuevo_animal = $_POST['nuevo_animal'];
+
+                                    $query = "INSERT INTO especie (animal) VALUES ('$nuevo_animal')";
+                                    $respuesta = $conexion->query($query);
+
+                                    $query = "SELECT id FROM especie WHERE animal = '$nuevo_animal'";
+                                    $respuesta = $conexion->query($query);
+                                    
+                                    $animal = $respuesta->fetch_assoc()['id'];
+
+                                    $query = "INSERT INTO animal (id_especie, edad, peso, estado) VALUES ('$animal', $edad, '$peso', '$estado')";
+                                    $respuesta = $conexion->query($query);
+                                }
+
+
+                                if($respuesta){
+                                    echo "<script>alert('El reporte se ha registrado correctamente')</script>";
+                                }
+                            }
+                        }
+                    ?>
                     
 
                     <label> Especie:  </label><br>
