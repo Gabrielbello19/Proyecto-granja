@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="topnav">
-            <a href="index.php?pagina=inicio">Home</a>
+            <a href="index.php?pagina=inicio">Inicio</a>
             <a href="index.php?pagina=reportes">Reporte</a>
             <a href="index.php?pagina=registro-animal" class="active">Registrar Animal</a>
             <a href="index.php?pagina=vacunacion">Registro de vacunas</a>
