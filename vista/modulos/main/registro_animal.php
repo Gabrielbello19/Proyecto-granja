@@ -22,9 +22,11 @@
             
 
                 <form action="">
+                    
+
                     <label> Especie:  </label><br>
                     <select name="animal" required>
-                        <option> -- seleccione -- </option>
+                        <option></option>
                         <?php
                             //capturar todos los animales
                             require "modelo/conexion.php";
@@ -38,8 +40,18 @@
                                 echo "<option value='$animal_id'>$animal</option>";
                             }
                         ?>
-                    </select><br>
+                    </select>
                     <br>
+                    <br>
+
+                    <label>Nueva especie</label>
+                    <input id="nuevaEspecie" type="checkbox" id="alguien-mas">
+                    <br>
+                    <input id="nuevaEspecie_t" type="text" name="nuevo_animal" placeholder="nombre de la especie" disabled>
+                    
+                    <br>
+                    <br>
+
                     <label> Edad:  </label><br>
                     <input type="number" name="edad" ><br>
                     <br>

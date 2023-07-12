@@ -18,18 +18,29 @@
         <div class="container-fluid p-5">
             <h3 class="ps-5">Crear Reporte</h3>
             <div class="card p-5 bg-dark text-white">
-                <form action="">
+                <form action="index.php?pagina=reportes">
+                    <?php
+                        require "modelo/conexion.php";
+
+                        if($_POST){
+                            if (isset($_POST['tipo']) && isset($_POST['animal']) && isset($_POST['mensaje'])){
+                                $emisor = isset($_POST['emisor'])? isset($_POST['emisor']) : 'jaimito';
+                                
+                            }
+                        }
+                    ?>
+
                     <label>Yo he creado este reporte.</label>
                     <input id="yoCreeRep" type="checkbox" id="alguien-mas" checked>
                     <br>
 
-                    <input id="yoCreeRep_t" type="text" placeholder="nuevo emisor" disabled>
+                    <input id="yoCreeRep_t" type="text" name="emisor" placeholder="nuevo emisor" disabled>
 
                     <br>
                     <br>
                     
                     <label>Tipo de revision </label>
-                    <select name="animal" required>
+                    <select name="tipo" required>
                         <option></option>
                         <option value="rutina"> Chequeo de rutina </option>
                         <option value="emergencia"> Chequeo de emergencia </option>

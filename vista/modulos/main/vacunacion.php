@@ -18,12 +18,27 @@
         <div class="container-fluid p-5">
             <h3 class="ps-5">Registro de vacunas</h3>
             <div class="card p-5 bg-dark text-white">
-                <form action="">
+                <form action="index.php?pagina=vacunacion" method="post">
+                    
                     <label> Vacuna:  </label><br>
                     <input type="text" name="vacuna" placeholder="Vacuna."><br>
                     <br>
-                    <label> ID del animal:  </label><br>
-                    <input type="number" name="id_animal" placeholder="Id_animal."><br>
+                    <label> Animal:  </label><br>
+                    <select name="animal" required>
+                        <option></option>
+                        <?php
+                            //capturar todos los animales
+
+                            $query = "SELECT * FROM especie";
+                            $resultado = $conexion->query($query);
+
+                            while ($res = $resultado->fetch_assoc()){
+                                $animal_id = $res['id'];
+                                $animal = $res['animal'];
+                                echo "<option value='$animal_id'>$animal</option>";
+                            }
+                        ?>
+                    </select>
                     <br>
                     <label> Numero de dosis:  </label><br>
                     <input type="number" name="nro_dosis" placeholder="Numero de dosis."><br>

@@ -5,10 +5,10 @@
 
             // Diccionario de refernecia
             $referencia = array(
-                "inicio"    => "dashboard",
-                "reportes"    => "reporte",
+                "inicio"             => "dashboard",
+                "reportes"           => "reporte",
                 "registro-animal"    => "registro_animal",
-                "vacunacion"    => "vacunacion",
+                "vacunacion"         => "vacunacion",
             );
 
             require "vista/modulos/main/".$referencia[$peticion].".php";

@@ -11,6 +11,7 @@ h3 {
 .topnav {
     overflow: hidden;
     background-color: #333;
+    width: 100vw;
 }
 
 .topnav a {

@@ -25,6 +25,11 @@ document.addEventListener("DOMContentLoaded", function(e){
             field : document.querySelector('#yoCreeRep'),
             target: '#yoCreeRep_t',
             inverse : true
+        },
+        {
+            field : document.querySelector('#nuevaEspecie'),
+            target: '#nuevaEspecie_t',
+            inverse : false
         }
     ];
 
