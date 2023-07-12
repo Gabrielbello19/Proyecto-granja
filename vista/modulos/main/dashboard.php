@@ -21,11 +21,11 @@
             <table class='styled-table'>
                 <thead class='headTableForQuote'>
                     <tr>
-                        <td class='fw-bold'>código</td>
-                        <td class='fw-bold'>animal</td>
-                        <td class='fw-bold'>edad</td>
-                        <td class='fw-bold'>peso</td>
-                        <td class='fw-bold'>estado</td>
+                        <td class='fw-bold'>Código</td>
+                        <td class='fw-bold'>Animal</td>
+                        <td class='fw-bold'>Edad</td>
+                        <td class='fw-bold'>Peso (kg)</td>
+                        <td class='fw-bold'>Estado</td>
                     </tr>
                 </thead>
                 <tbody>
@@ -34,8 +34,25 @@
                         require "modelo/conexion.php";
 
                         $query = "SELECT a.id, e.animal, a.edad, a.peso, a.estado FROM animal a LEFT JOIN especie e ON a.id_especie = e.id ";
-                        
-                        
+                        $resultado = $conexion->query($query);
+
+                        while ($res = $resultado->fetch_assoc()){
+                            $id     = $res['id'];
+                            $animal = $res['animal'];
+                            $edad   = $res['edad'];
+                            $peso   = $res['peso'];
+                            $estado = $res['estado'];
+
+                            echo "
+                            <tr>
+                                <td>$id</td>
+                                <td>$animal</td>
+                                <td>$edad</td>
+                                <td>$peso</td>
+                                <td>$estado</td>
+                            </tr>
+                            ";
+                        }
                     ?>
                 </tbody>
             </table>

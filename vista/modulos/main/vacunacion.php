@@ -27,7 +27,7 @@
                     <input type="number" name="nro_dosis" placeholder="Numero de dosis.">
                     <input type="date" name="aplicada" placeholder="Aplicada.">
                     <input type="date" name="prox_dosis" placeholder="Proxima dosis.">
-                    <input class="boton-enviar" type="submit" value="Registrar">
+                    <input type="submit" value="Registrar">
                     <br>
                     <br>
                 </form>
