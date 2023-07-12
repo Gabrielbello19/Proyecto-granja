@@ -29,13 +29,13 @@
                             //capturar todos los animales
                             require "modelo/conexion.php";
 
-                            $query = "SELECT a.id, e.animal FROM animal a LEFT JOIN especie e ON a.id_especie = e.id";
+                            $query = "SELECT * FROM especie";
                             $resultado = $conexion->query($query);
 
                             while ($res = $resultado->fetch_assoc()){
                                 $animal_id = $res['id'];
                                 $animal = $res['animal'];
-                                echo "<option value='$animal_id'>$animal_id - $animal</option>";
+                                echo "<option value='$animal_id'>$animal</option>";
                             }
                         ?>
                     </select><br>
