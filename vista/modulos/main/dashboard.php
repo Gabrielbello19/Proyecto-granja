@@ -36,8 +36,6 @@
                         $query = "SELECT a.id, e.animal, a.edad, a.peso, a.estado FROM animal a LEFT JOIN especie e ON a.id_especie = e.id ";
                         $resultado = $conexion->query($query);
 
-                        echo json_encode($resultado);
-
                         while ($res = $resultado->fetch_assoc()){
                             $id     = $res['id'];
                             $animal = $res['animal'];
