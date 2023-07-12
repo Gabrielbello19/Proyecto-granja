@@ -36,7 +36,7 @@
                         $query = "SELECT a.id, e.animal, a.edad, a.peso, a.estado FROM animal a LEFT JOIN especie e ON a.id_especie = e.id ";
                         $resultado = $conexion->query($query);
 
-                        while ($res = $resultado->fetch_assoc()){
+                        while (($res = $resultado->fetch_assoc()) != null){
                             $id     = $res['id'];
                             $animal = $res['animal'];
                             $edad   = $res['edad'];
