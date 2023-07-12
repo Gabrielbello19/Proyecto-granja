@@ -5,7 +5,7 @@
 
             // Diccionario de refernecia
             $referencia = array(
-                "inicio"    => "dashboard",
+                "inicio"    => "inicio",
                 "reportes"    => "reporte",
                 "registro-animal"    => "registro_animal",
                 "vacunacion"    => "vacunacion",
