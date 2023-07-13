@@ -92,7 +92,7 @@
                     <textarea id="textoMensaje" name="mensaje" rows="10" maxlength="500" required></textarea>
                     <p id="textoMensajeCuenta">0/500</p>
 
-                    <input type="submit" value="Enviar">
+                    <input class="submit" type="submit" value="Enviar">
                 </form>
             </div>
         </div>

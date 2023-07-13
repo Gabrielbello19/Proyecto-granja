@@ -112,7 +112,7 @@
                     <label> Proxima revision:  </label><br>
                     <input type="date" name="prox_revision" ><br>
                     <br>
-                    <input type="submit" value="Registrar">
+                    <input class="submit" type="submit" value="Registrar">
                     
                 </form>
             </div>

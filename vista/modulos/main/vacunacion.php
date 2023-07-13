@@ -26,17 +26,19 @@
                     <?php
                         require "modelo/conexion.php";
 
-                        $vacuna = $_POST['vacuna'];
-                        $animal = $_POST['animal'];
-                        $nro_dosis = $_POST['nro_dosis'];
-                        $aplicada = $_POST['aplicada'];
-                        $prox_dosis = $_POST['prox_dosis'];
-                        
-                        $query = "INSERT INTO vacuna (vacuna, id_animal, nro_dosis, aplicada, prox_dosis) VALUES ('$vacuna', '$animal', '$nro_dosis', '$aplicada', '$prox_dosis')";
-                        $respuesta = $conexion->query($query);
+                        if($_POST){
+                            $vacuna = $_POST['vacuna'];
+                            $animal = $_POST['animal'];
+                            $nro_dosis = $_POST['nro_dosis'];
+                            $aplicada = $_POST['aplicada'];
+                            $prox_dosis = $_POST['prox_dosis'];
+                            
+                            $query = "INSERT INTO vacuna (vacuna, id_animal, nro_dosis, aplicada, prox_dosis) VALUES ('$vacuna', '$animal', '$nro_dosis', '$aplicada', '$prox_dosis')";
+                            $respuesta = $conexion->query($query);
 
-                        if($respuesta){
-                            echo "<script>alert('El reporte se ha registrado correctamente')</script>";
+                            if($respuesta){
+                                echo "<script>alert('la dosis se ha registrado correctamente')</script>";
+                            }
                         }
                     ?>
                     
@@ -58,10 +60,6 @@
                                 $animal = $res['animal'];
                                 echo "<option value='$animal_id'>$animal_id - $animal</option>";
                             }
-
-                            if($respuesta){
-                                echo "<script>alert('La dosis se ha registrado correctamente')</script>";
-                            }
                         ?>
                     </select>
                     <br>
@@ -74,7 +72,7 @@
                     <label> Proxima aplicacion:  </label><br>
                     <input type="date" name="prox_dosis" placeholder="Proxima dosis."><br>
                     <br>
-                    <input class="boton-enviar" type="submit" value="Registrar">
+                    <input class="submit" class="boton-enviar" type="submit" value="Registrar">
                 </form>
             </div>
         </div>
