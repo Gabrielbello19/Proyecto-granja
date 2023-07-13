@@ -15,7 +15,7 @@
             <a href="index.php?pagina=registro-animal" >Registrar Animal</a>
             <a href="index.php?pagina=vacunacion">Registro de vacunas</a>
             <form action="sesion.php?q=logout.php" method="post">
-                <input type="submit" class="boton-cerrar-sesion" value="Cerrar Sesion">
+            <input  type="submit" class="boton-cerrar-sesion" value="Cerrar Sesion">
             </form>
         </div>
         </div>
