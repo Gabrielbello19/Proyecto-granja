@@ -13,7 +13,10 @@
             <a href="index.php?pagina=inicio">Inicio</a>
             <a href="index.php?pagina=reportes" class="active">Reporte</a>
             <a href="index.php?pagina=registro-animal" >Registrar Animal</a>
-            <a href="index.php?pagina=vacunacion">Registro de vacunas</a>   
+            <a href="index.php?pagina=vacunacion">Registro de vacunas</a>
+            <form action="sesion.php?q=logout.php" method="post">
+                <input type="submit" class="boton-cerrar-sesion" value="Cerrar Sesion">
+            </form>
         </div>
         <div class="container-fluid p-5">
             <h3 class="ps-5">Crear Reporte</h3>
