@@ -10,11 +10,12 @@
     </head>
     <body>
         <div class="topnav">
+            <img src="vista/img/logo.png" width="50">
             <a href="index.php?pagina=inicio">Inicio</a>
             <a href="index.php?pagina=reportes" class="active">Reporte</a>
             <a href="index.php?pagina=registro-animal" >Registrar Animal</a>
             <a href="index.php?pagina=vacunacion">Registro de vacunas</a>
-            <form action="sesion.php?q=logout.php" method="post">
+            <form action="sesion.php?q=logout" method="post">
                 <input type="submit" class="boton-cerrar-sesion" value="Cerrar Sesion">
             </form>
         </div>

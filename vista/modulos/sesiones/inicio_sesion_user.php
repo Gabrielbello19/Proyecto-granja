@@ -15,7 +15,7 @@
                 session_start();
 
                 $_SESSION['id'] = $respuesta->fetch_row()[0];
-                $_SESSION['usuario'] = $respuesta->fetch_row()[1];
+                $_SESSION['usuario'] = $n_usuario;
 
                 header('location: http://localhost/proyecto-granja/index.php');
             }

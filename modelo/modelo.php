@@ -21,7 +21,8 @@
                 "login"             => "inicio_sesion",
                 "register"          => "registrarse",
                 "register_user"     => "registrar_user",
-                "login_user"     => "inicio_sesion_user"
+                "login_user"        => "inicio_sesion_user",
+                "logout"            => "logout"
             );
 
             require "vista/modulos/sesiones/".$referencia[$peticion].".php";

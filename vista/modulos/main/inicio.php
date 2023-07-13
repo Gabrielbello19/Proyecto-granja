@@ -10,17 +10,20 @@
     </head>
     <body>
         <div class="topnav">
+            <img src="vista/img/logo.png" width="50">
             <a href="index.php?pagina=inicio" class="active">Inicio</a>
             <a href="index.php?pagina=reportes">Reporte</a>
             <a href="index.php?pagina=registro-animal" >Registrar Animal</a>
             <a href="index.php?pagina=vacunacion">Registro de vacunas</a>
-            <form action="sesion.php?q=logout.php" method="post">
+            <form action="sesion.php?q=logout" method="post">
                 <input type="submit" class="boton-cerrar-sesion" value="Cerrar Sesion">
             </form>
         </div>
-        </div>
+        <?php
+            echo $_SESSION['id'];
+        ?>
         <div class="container-fluid p-5">
-            <h3 class="ps-5">Panorama general</h3>
+            <h3 class="ps-5">Bienvenido <?php echo $_SESSION['usuario'] ?></h3>
             <table class='styled-table'>
                 <thead class='headTableForQuote'>
                     <tr>

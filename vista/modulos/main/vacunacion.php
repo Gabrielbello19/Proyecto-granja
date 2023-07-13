@@ -10,11 +10,12 @@
     </head>
     <body>
         <div class="topnav">
+            <img src="vista/img/logo.png" width="50">
             <a href="index.php?pagina=inicio">Inicio</a>
             <a href="index.php?pagina=reportes">Reporte</a>
             <a href="index.php?pagina=registro-animal">Registrar Animal</a>
             <a href="index.php?pagina=vacunacion" class="active">Registro de vacunas</a>
-            <form action="sesion.php?q=logout.php" method="post">
+            <form action="sesion.php?q=logout" method="post">
                 <input type="submit" class="boton-cerrar-sesion" value="Cerrar Sesion">
             </form>
         </div>
@@ -22,6 +23,22 @@
             <h3 class="ps-5">Registro de vacunas</h3>
             <div class="card p-5 bg-dark text-white">
                 <form action="index.php?pagina=vacunacion" method="post">
+                    <?php
+                        require "modelo/conexion.php";
+
+                        $vacuna = $_POST['vacuna'];
+                        $animal = $_POST['animal'];
+                        $nro_dosis = $_POST['nro_dosis'];
+                        $aplicada = $_POST['aplicada'];
+                        $prox_dosis = $_POST['prox_dosis'];
+                        
+                        $query = "INSERT INTO vacuna (vacuna, id_animal, nro_dosis, aplicada, prox_dosis) VALUES ('$vacuna', '$animal', '$nro_dosis', '$aplicada', '$prox_dosis')";
+                        $respuesta = $conexion->query($query);
+
+                        if($respuesta){
+                            echo "<script>alert('El reporte se ha registrado correctamente')</script>";
+                        }
+                    ?>
                     
                     <label> Vacuna:  </label><br>
                     <input type="text" name="vacuna" placeholder="Vacuna."><br>
@@ -33,13 +50,17 @@
                             //capturar todos los animales
                             require "modelo/conexion.php";
 
-                            $query = "SELECT * FROM especie";
+                            $query = "SELECT a.id, e.animal FROM animal a LEFT JOIN especie e ON a.id_especie = e.id ";
                             $resultado = $conexion->query($query);
 
                             while ($res = $resultado->fetch_assoc()){
                                 $animal_id = $res['id'];
                                 $animal = $res['animal'];
-                                echo "<option value='$animal_id'>$animal</option>";
+                                echo "<option value='$animal_id'>$animal_id - $animal</option>";
+                            }
+
+                            if($respuesta){
+                                echo "<script>alert('La dosis se ha registrado correctamente')</script>";
                             }
                         ?>
                     </select>

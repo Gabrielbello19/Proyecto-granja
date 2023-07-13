@@ -23,6 +23,12 @@ h3 {
     font-size: 17px;
 }
 
+.topnav img {
+    float: left;
+    display: in-line;
+    margin: 0 12px;
+}
+
 .topnav a:hover {
     background-color: #ddd;
     color: black;

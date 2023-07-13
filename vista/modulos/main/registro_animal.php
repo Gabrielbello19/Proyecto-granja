@@ -10,11 +10,12 @@
     </head>
     <body>
         <div class="topnav">
+            <img src="vista/img/logo.png" width="50">
             <a href="index.php?pagina=inicio">Inicio</a>
             <a href="index.php?pagina=reportes">Reporte</a>
             <a href="index.php?pagina=registro-animal" class="active">Registrar Animal</a>
             <a href="index.php?pagina=vacunacion">Registro de vacunas</a>
-            <form action="sesion.php?q=logout.php" method="post">
+            <form action="sesion.php?q=logout" method="post">
                 <input type="submit" class="boton-cerrar-sesion" value="Cerrar Sesion">
             </form>
         </div>
@@ -34,10 +35,12 @@
                                 $edad = $_POST['edad'];
                                 $peso = $_POST['peso'];
                                 $estado = $_POST['estado'];
+                                $ult_rev = $_POST['ult_revision'];
+                                $prox_rev = $_POST['prox_revision'];
 
                                 if(!isset($_POST['nuevo_animal'])){
 
-                                    $query = "INSERT INTO animal (id_especie, edad, peso, estado) VALUES ('$animal', $edad, '$peso', '$estado')";
+                                    $query = "INSERT INTO animal (id_especie, edad, peso, estado, ult_revision, prox_revision) VALUES ('$animal', $edad, '$peso', '$estado', '$ult_rev', '$prox_rev')";
                                     $respuesta = $conexion->query($query);
 
                                 }
@@ -59,7 +62,7 @@
 
 
                                 if($respuesta){
-                                    echo "<script>alert('El reporte se ha registrado correctamente')</script>";
+                                    echo "<script>alert('El animal se ha registrado correctamente')</script>";
                                 }
                             }
                         }
