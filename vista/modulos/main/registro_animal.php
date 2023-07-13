@@ -92,7 +92,7 @@
                     <label>Nueva especie</label>
                     <input id="nuevaEspecie" type="checkbox" id="alguien-mas">
                     <br>
-                    <input id="nuevaEspecie_t" type="text" name="nuevo_animal" placeholder="nombre de la especie" disabled>
+                    <input id="nuevaEspecie_t" type="text" name="nuevo_animal" placeholder="nombre de la especie" >
                     
                     <br>
                     <br>
