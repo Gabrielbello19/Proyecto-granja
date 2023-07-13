@@ -18,13 +18,5 @@
             </form>
             <a class="enlace" href="sesion.php?q=register">> No estas registrado?, regístrate.</a>
         </div>
-        
-        <footer>
-            <h4>Nuestra ubicación:</h4>
-            <p>Turmero, Edo. Aragua, Venezuela.</p>
-            <h4>Contacto:</h4>
-            <p>Teléfono: 0424-3655004</p>
-            <p>Correo electrónico: gaboxbellox@gmail.com</p>
-       </footer>
     </body> 
 </html>

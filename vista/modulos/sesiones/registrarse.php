@@ -17,17 +17,11 @@
                <input class="input-usuario" type="text" name="apellido" placeholder="Apellido." required>
                <input class="input-usuario" type="text" name="correo" placeholder="Correo." required>
                <input class="input-usuario" type="password" name="contraseña" placeholder="Contraseña." required>
+               <label>Fecha de nacimiento:</label>
+               <br>
                <input class="input-usuario" type="date" name="nacimiento" placeholder="Fecha de nacimiento." required>
                <input class="boton-enviar" type="submit" value="Registrar">
          </form>
         </div>
-
-        <footer>
-            <h4>Nuestra ubicación:</h4>
-            <p>Turmero, Edo. Aragua, Venezuela.</p>
-            <h4>Contacto:</h4>
-            <p>Teléfono: 0424-3655004</p>
-            <p>Correo electrónico: gaboxbellox@gmail.com</p>
-       </footer>
     </body>
 </html>
