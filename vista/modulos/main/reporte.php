@@ -14,7 +14,9 @@
             <a href="index.php?pagina=inicio">Inicio</a>
             <a href="index.php?pagina=reportes" class="active">Reporte</a>
             <a href="index.php?pagina=registro-animal" >Registrar Animal</a>
-            <a href="index.php?pagina=vacunacion">Registro de vacunas</a>
+            <a href="index.php?pagina=vacunacion">Registro de Vacunas</a>
+            <a href="index.php?pagina=ver-reportes">Ver Reportes</a>
+            <a href="index.php?pagina=ver-dosis">Ver Dosis</a>
             <form action="sesion.php?q=logout" method="post">
                 <input type="submit" class="boton-cerrar-sesion" value="Cerrar Sesion">
             </form>
@@ -28,7 +30,7 @@
 
                         if($_POST){
                             if (isset($_POST['tipo']) && isset($_POST['animal']) && isset($_POST['mensaje'])){
-                                $emisor = isset($_POST['emisor'])? $_POST['emisor'] : 'jaimito';
+                                $emisor = isset($_POST['emisor'])? $_POST['emisor'] : $_SESSION['usuario'];
                                 $tipo = $_POST['tipo'];
                                 $animal = $_POST['animal'];
                                 $mensaje = $_POST['mensaje'];

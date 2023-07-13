@@ -20,7 +20,7 @@
                 header('location: http://localhost/proyecto-granja/index.php');
             }
             else{
-
+                echo "<script>alert('Credeciales incorrectas!')</script>";
             }
         }
     }

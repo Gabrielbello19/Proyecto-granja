@@ -14,13 +14,15 @@
             <a href="index.php?pagina=inicio">Inicio</a>
             <a href="index.php?pagina=reportes">Reporte</a>
             <a href="index.php?pagina=registro-animal">Registrar Animal</a>
-            <a href="index.php?pagina=vacunacion" class="active">Registro de vacunas</a>
+            <a href="index.php?pagina=vacunacion" class="active">Registro de Vacunas</a>
+            <a href="index.php?pagina=ver-reportes">Ver Reportes</a>
+            <a href="index.php?pagina=ver-dosis">Ver Dosis</a>
             <form action="sesion.php?q=logout" method="post">
                 <input type="submit" class="boton-cerrar-sesion" value="Cerrar Sesion">
             </form>
         </div>
         <div class="container-fluid p-5">
-            <h3 class="ps-5">Registro de vacunas</h3>
+            <h3 class="ps-5">Registro de Vacunas</h3>
             <div class="card p-5 bg-dark text-white">
                 <form action="index.php?pagina=vacunacion" method="post">
                     <?php
@@ -43,7 +45,7 @@
                     ?>
                     
                     <label> Vacuna:  </label><br>
-                    <input type="text" name="vacuna" placeholder="Vacuna."><br>
+                    <input type="text" name="vacuna" placeholder="Vacuna." required><br>
                     <br>
                     <label> Animal:  </label><br>
                     <select name="animal" required>
@@ -64,13 +66,13 @@
                     </select>
                     <br>
                     <label> Numero de dosis:  </label><br>
-                    <input type="number" name="nro_dosis" placeholder="Numero de dosis."><br>
+                    <input type="number" name="nro_dosis" placeholder="Numero de dosis." min=0 required><br>
                     <br>
                     <label> Fecha de aplicacion:  </label><br>
-                    <input type="date" name="aplicada" placeholder="Aplicada."><br>
+                    <input type="date" name="aplicada" placeholder="Aplicada." required><br>
                     <br>
                     <label> Proxima aplicacion:  </label><br>
-                    <input type="date" name="prox_dosis" placeholder="Proxima dosis."><br>
+                    <input type="date" name="prox_dosis" placeholder="Proxima dosis." required><br>
                     <br>
                     <input class="submit" class="boton-enviar" type="submit" value="Registrar">
                 </form>

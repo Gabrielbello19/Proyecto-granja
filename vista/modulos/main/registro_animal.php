@@ -14,7 +14,9 @@
             <a href="index.php?pagina=inicio">Inicio</a>
             <a href="index.php?pagina=reportes">Reporte</a>
             <a href="index.php?pagina=registro-animal" class="active">Registrar Animal</a>
-            <a href="index.php?pagina=vacunacion">Registro de vacunas</a>
+            <a href="index.php?pagina=vacunacion">Registro de Vacunas</a>
+            <a href="index.php?pagina=ver-reportes">Ver Reportes</a>
+            <a href="index.php?pagina=ver-dosis">Ver Dosis</a>
             <form action="sesion.php?q=logout" method="post">
                 <input type="submit" class="boton-cerrar-sesion" value="Cerrar Sesion">
             </form>
@@ -70,7 +72,7 @@
                     
 
                     <label> Especie:  </label><br>
-                    <select name="animal" required>
+                    <select name="animal">
                         <option></option>
                         <?php
                             //capturar todos los animales
@@ -98,19 +100,19 @@
                     <br>
 
                     <label> Edad:  </label><br>
-                    <input type="number" name="edad" ><br>
+                    <input type="number" name="edad" min=0 required><br>
                     <br>
                     <label> Peso (kg):  </label><br>
-                    <input  id="inputPeso" name="peso" type="number" step="0.1" placeholder="0.0" min="0" /> <br>
+                    <input  id="inputPeso" name="peso" type="number" step="0.1" placeholder="0.0" min="0" required/> <br>
                     <br>
                     <label> Estado:  </label><br>
-                    <input type="text" name="estado" ><br>
+                    <input type="text" name="estado" required><br>
                     <br>
                     <label> Ultima revision:  </label><br>
-                    <input type="date" name="ult_revision" ><br>
+                    <input type="date" name="ult_revision" required><br>
                     <br>
                     <label> Proxima revision:  </label><br>
-                    <input type="date" name="prox_revision" ><br>
+                    <input type="date" name="prox_revision" required><br>
                     <br>
                     <input class="submit" type="submit" value="Registrar">
                     

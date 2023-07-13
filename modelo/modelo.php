@@ -9,6 +9,8 @@
                 "reportes"           => "reporte",
                 "registro-animal"    => "registro_animal",
                 "vacunacion"         => "vacunacion",
+                "ver-reportes"       => "ver_reportes",
+                "ver-dosis"       => "ver_dosis"
             );
 
             require "vista/modulos/main/".$referencia[$peticion].".php";

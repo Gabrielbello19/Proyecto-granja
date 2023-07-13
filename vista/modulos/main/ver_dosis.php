@@ -15,23 +15,23 @@
             <a href="index.php?pagina=reportes">Reporte</a>
             <a href="index.php?pagina=registro-animal" >Registrar Animal</a>
             <a href="index.php?pagina=vacunacion">Registro de Vacunas</a>
-            <a href="index.php?pagina=ver-reportes" class="active">Ver Reportes</a>
-            <a href="index.php?pagina=ver-dosis">Ver Dosis</a>
+            <a href="index.php?pagina=ver-reportes">Ver Reportes</a>
+            <a href="index.php?pagina=ver-dosis" class="active">Ver Dosis</a>
             <form action="sesion.php?q=logout" method="post">
                 <input type="submit" class="boton-cerrar-sesion" value="Cerrar Sesion">
             </form>
         </div>
         <div class="container-fluid p-5">
-            <h3 class="ps-5">Histórico de Reportes</h3>
+            <h3 class="ps-5">Histórico de vacunas</h3>
             <table class='styled-table'>
                 <thead class='headTableForQuote'>
                     <tr>
                         <td class='fw-bold'>Código</td>
-                        <td class='fw-bold'>Emisor</td>
-                        <td class='fw-bold'>Animal</td>
-                        <td class='fw-bold'>Mensaje</td>
                         <td class='fw-bold'>Tipo</td>
-                        <td class='fw-bold'>Emitido</td>
+                        <td class='fw-bold'>Animal</td>
+                        <td class='fw-bold'>Nro. de Dosis</td>
+                        <td class='fw-bold'>Aplicada</td>
+                        <td class='fw-bold'>Prox. Dosis</td>
                     </tr>
                 </thead>
                 <tbody>
@@ -39,16 +39,16 @@
                         //capturar todos los animales
                         require "modelo/conexion.php";
 
-                        $query = "SELECT * FROM reporte";
+                        $query = "SELECT * FROM vacuna";
                         $resultado = $conexion->query($query);
 
                         while ($res = $resultado->fetch_assoc()){
-                            $id     = $res['id'];
-                            $animal = $res['usuario'];
-                            $edad   = $res['id_animal'];
-                            $peso   = $res['mensaje'];
-                            $estado = $res['tipo'];
-                            $emitido = $res['emitido'];
+                            $id      = $res['id'];
+                            $animal  = $res['vacuna'];
+                            $edad    = $res['id_animal'];
+                            $peso    = $res['nro_dosis'];
+                            $estado  = $res['aplicada'];
+                            $emitido = $res['prox_dosis'];
 
                             $query = "SELECT e.animal FROM animal a LEFT JOIN especie e ON a.id_especie = e.id WHERE a.id = $id";
                             $nombre_animal = $conexion->query($query)->fetch_array()[0];

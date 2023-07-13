@@ -14,14 +14,13 @@
             <a href="index.php?pagina=inicio" class="active">Inicio</a>
             <a href="index.php?pagina=reportes">Reporte</a>
             <a href="index.php?pagina=registro-animal" >Registrar Animal</a>
-            <a href="index.php?pagina=vacunacion">Registro de vacunas</a>
+            <a href="index.php?pagina=vacunacion">Registro de Vacunas</a>
+            <a href="index.php?pagina=ver-reportes">Ver Reportes</a>
+            <a href="index.php?pagina=ver-dosis">Ver Dosis</a>
             <form action="sesion.php?q=logout" method="post">
                 <input type="submit" class="boton-cerrar-sesion" value="Cerrar Sesion">
             </form>
         </div>
-        <?php
-            echo $_SESSION['id'];
-        ?>
         <div class="container-fluid p-5">
             <h3 class="ps-5">Bienvenido <?php echo $_SESSION['usuario'] ?></h3>
             <table class='styled-table'>
