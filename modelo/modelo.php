@@ -5,13 +5,26 @@
 
             // Diccionario de refernecia
             $referencia = array(
-                "inicio"    => "inicio",
-                "reportes"    => "reporte",
+                "inicio"             => "inicio",
+                "reportes"           => "reporte",
                 "registro-animal"    => "registro_animal",
                 "vacunacion"         => "vacunacion",
             );
 
             require "vista/modulos/main/".$referencia[$peticion].".php";
+        }
+
+        public function LogicaDeEnlacesSesion($peticion){
+
+            // Diccionario de refernecia
+            $referencia = array(
+                "login"             => "inicio_sesion",
+                "register"          => "registrarse",
+                "register_user"     => "registrar_user",
+                "login_user"     => "inicio_sesion_user"
+            );
+
+            require "vista/modulos/sesiones/".$referencia[$peticion].".php";
         }
     }
 ?>

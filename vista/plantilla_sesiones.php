@@ -1,4 +1,4 @@
 <?php
     $contrl = new Controlador();
-    $contrl->PeticionesGet();
+    $contrl->PeticionesGetSesiones();
 ?>
